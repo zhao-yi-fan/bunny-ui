@@ -1,8 +1,6 @@
 name: Sync to Gitee
 
-on:
-  push:
-    branches: [master, gh-pages]
+on: page_build
 
 jobs:
   build:
@@ -12,7 +10,7 @@ jobs:
         uses: wearerequired/git-mirror-action@master
         env:
           # 在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
-          SSH_PRIVATE_KEY: ${{ secrets.ACTION_TOKEN }}
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
         with:
           # GitHub 源仓库地址
           source-repo: git@github.com:zhao-yi-fan/bunny-ui.git
