@@ -17,4 +17,4 @@ jobs:
           # GitHub 源仓库地址
           source-repo: git@github.com:zhao-yi-fan/bunny-ui.git
           # Gitee 目标仓库地址
-          destination-repo: git@gitee.com:vant-contrib/vant.git
+          destination-repo: git@gitee.com:iiicici/bunny-ui.git
