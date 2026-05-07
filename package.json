@@ -9,9 +9,10 @@
     "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
     "test:unit": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service test:unit",
     "lib": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build --target lib --name bunnyUi ./src/packages/index.js && NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build --all --no-clean",
+    "docs:sync-assets": "node ./scripts/sync-docs-assets.js",
     "docs:install": "npm --prefix docs install",
-    "docs:serve": "npm run lib && npm --prefix docs run docs:dev",
-    "docs:build": "npm run lib && npm --prefix docs run docs:build",
+    "docs:serve": "npm run lib && npm run docs:sync-assets && npm --prefix docs run docs:dev",
+    "docs:build": "npm run lib && npm run docs:sync-assets && npm --prefix docs run docs:build",
     "docs:preview": "npm --prefix docs run docs:preview"
   },
   "main": "./dist/bunnyUi.umd.min.js",

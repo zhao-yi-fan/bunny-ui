@@ -4,6 +4,7 @@ node_modules
 /docs-dist
 docs/.vitepress/dist
 docs/node_modules
+docs/public/dist
 
 
 # local env files
