@@ -12,19 +12,19 @@
   </head>
   <body>
     <div id="app" class="demo">
-      <bn-button type="primary" @click="visible = true">Open dialog</bn-button>
-      <bn-dialog :visible.sync="visible" title="Publish docs">
-        The VitePress docs site now embeds Vue 2 demos through the built library bundle.
+      <bn-button type="primary" @click="visible = true">打开弹窗</bn-button>
+      <bn-dialog :visible.sync="visible" title="发布文档">
+        当前 VitePress 文档站通过组件库打包产物来嵌入真实 Vue 2 demo。
         <template slot="footer">
-          <bn-button @click="visible = false">Cancel</bn-button>
-          <bn-button type="primary" @click="visible = false">Confirm</bn-button>
+          <bn-button @click="visible = false">取消</bn-button>
+          <bn-button type="primary" @click="visible = false">确认</bn-button>
         </template>
       </bn-dialog>
     </div>
     <script src="https://unpkg.com/vue@2.7.16/dist/vue.min.js"></script>
     <script src="../dist/bunnyUi.umd.js"></script>
     <script>
-      Vue.use(bunnyUi.default)
+      Vue.use(bunnyUi)
       new Vue({
         el: '#app',
         data: { visible: false }

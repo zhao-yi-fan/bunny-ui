@@ -2,25 +2,25 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Bunny UI',
-  description: 'Vue 2 component library docs powered by VitePress.',
+  description: '基于 Vue 2 的 Bunny UI 组件库文档。',
   base: '/bunny-ui/',
   cleanUrls: true,
   themeConfig: {
     nav: [
-      { text: 'Guide', link: '/' },
-      { text: 'Components', link: '/components/button-group' },
+      { text: '指南', link: '/' },
+      { text: '组件', link: '/components/button-group' },
       { text: 'GitHub', link: 'https://github.com/zhao-yi-fan/bunny-ui' }
     ],
     sidebar: [
       {
-        text: 'Guide',
+        text: '指南',
         items: [
-          { text: 'Introduction', link: '/' },
-          { text: 'Getting Started', link: '/getting-started' }
+          { text: '介绍', link: '/' },
+          { text: '快速开始', link: '/getting-started' }
         ]
       },
       {
-        text: 'Components',
+        text: '组件',
         items: [
           { text: 'Button Group', link: '/components/button-group' },
           { text: 'Icon', link: '/components/icon' },
@@ -38,7 +38,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/zhao-yi-fan/bunny-ui' }
     ],
     footer: {
-      message: 'Released under the MIT License.',
+      message: '基于 MIT License 开源。',
       copyright: 'Copyright © Zhao Yifan'
     }
   }

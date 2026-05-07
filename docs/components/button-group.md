@@ -1,12 +1,12 @@
 # Button Group
 
-<p class="lead">Group related actions into a compact horizontal or vertical cluster.</p>
+<p class="lead">将一组关联操作收拢成紧凑的横向或纵向按钮集。</p>
 
-<DemoFrame demo="button-group" title="Button Group demo" :height="260" />
+<DemoFrame demo="button-group" title="Button Group 示例" :height="260" />
 
 ## API
 
-| Prop | Description | Type | Default |
+| 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| `size` | Inherit button size inside the group. | `string` | `''` |
-| `vertical` | Stack buttons vertically. | `boolean` | `false` |
+| `size` | 统一控制组内按钮尺寸。 | `string` | `''` |
+| `vertical` | 是否纵向排列。 | `boolean` | `false` |

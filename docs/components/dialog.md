@@ -1,22 +1,22 @@
 # Dialog
 
-<p class="lead">Focused modal surface for confirmation and short task flows.</p>
+<p class="lead">用于确认、提示和短流程操作的模态弹层。</p>
 
-<DemoFrame demo="dialog" title="Dialog demo" :height="360" />
+<DemoFrame demo="dialog" title="Dialog 示例" :height="360" />
 
 ## API
 
-| Prop | Description | Type | Default |
+| 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| `visible` | Controls dialog visibility. | `boolean` | `false` |
-| `title` | Header title text. | `string` | `''` |
-| `closeOnClickModal` | Close when backdrop is clicked. | `boolean` | `true` |
-| `closeOnPressEscape` | Close on `Escape`. | `boolean` | `true` |
+| `visible` | 控制弹层显示状态。 | `boolean` | `false` |
+| `title` | 头部标题。 | `string` | `''` |
+| `closeOnClickModal` | 点击遮罩是否关闭。 | `boolean` | `true` |
+| `closeOnPressEscape` | 按下 `Escape` 是否关闭。 | `boolean` | `true` |
 
-## Events
+## 事件
 
-| Event | Description |
+| 事件名 | 说明 |
 | --- | --- |
-| `update:visible` | Emits `false` when the dialog requests close. |
-| `open` | Emits when the dialog becomes visible. |
-| `close` | Emits when the dialog becomes hidden. |
+| `update:visible` | 组件请求关闭时发出 `false`。 |
+| `open` | 弹层显示时触发。 |
+| `close` | 弹层隐藏时触发。 |

@@ -1,11 +1,11 @@
 # Divider
 
-<p class="lead">Separate adjacent sections with optional centered or offset text.</p>
+<p class="lead">用于分隔内容区域，并支持文字左中右对齐。</p>
 
-<DemoFrame demo="divider" title="Divider demo" :height="240" />
+<DemoFrame demo="divider" title="Divider 示例" :height="240" />
 
 ## API
 
-| Prop | Description | Type | Default |
+| 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| `contentPosition` | Align divider text left, center, or right. | `string` | `center` |
+| `contentPosition` | 分割线文字对齐方式。 | `string` | `center` |

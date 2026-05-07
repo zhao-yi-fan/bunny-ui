@@ -49,3 +49,9 @@
   font-size: 17px;
   color: var(--vp-c-text-2);
 }
+
+.VPNavBarTitle .title,
+.VPSidebarItem .text,
+.VPDoc {
+  letter-spacing: 0;
+}

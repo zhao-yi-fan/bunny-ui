@@ -1,19 +1,19 @@
 # Tag
 
-<p class="lead">Compact status label with optional close affordance.</p>
+<p class="lead">轻量状态标签，支持关闭操作。</p>
 
-<DemoFrame demo="tag" title="Tag demo" :height="220" />
+<DemoFrame demo="tag" title="Tag 示例" :height="220" />
 
 ## API
 
-| Prop | Description | Type | Default |
+| 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| `type` | Visual status variant. | `string` | `default` |
-| `size` | Tag size variant. | `string` | `medium` |
-| `closable` | Show close button. | `boolean` | `false` |
+| `type` | 标签状态类型。 | `string` | `default` |
+| `size` | 标签尺寸。 | `string` | `medium` |
+| `closable` | 是否显示关闭按钮。 | `boolean` | `false` |
 
-## Events
+## 事件
 
-| Event | Description |
+| 事件名 | 说明 |
 | --- | --- |
-| `close` | Emits when the close button is clicked. |
+| `close` | 点击关闭按钮时触发。 |

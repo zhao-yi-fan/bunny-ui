@@ -12,20 +12,20 @@
   </head>
   <body>
     <div id="app" class="demo">
-      <bn-tag>Default</bn-tag>
-      <bn-tag type="success">Ready</bn-tag>
-      <bn-tag type="warning">Pending</bn-tag>
-      <bn-tag type="danger" closable @close="handleClose">Closable</bn-tag>
+      <bn-tag>默认</bn-tag>
+      <bn-tag type="success">已就绪</bn-tag>
+      <bn-tag type="warning">处理中</bn-tag>
+      <bn-tag type="danger" closable @close="handleClose">可关闭</bn-tag>
     </div>
     <script src="https://unpkg.com/vue@2.7.16/dist/vue.min.js"></script>
     <script src="../dist/bunnyUi.umd.js"></script>
     <script>
-      Vue.use(bunnyUi.default)
+      Vue.use(bunnyUi)
       new Vue({
         el: '#app',
         methods: {
           handleClose () {
-            this.$message.info('Tag closed')
+            this.$message.info('标签已关闭')
           }
         }
       })
