@@ -1,6 +1,11 @@
 <template>
   <div class="messages" v-if="messages.length">
-    <div v-for="m in messages" :key="m.id">
+    <div
+      v-for="m in messages"
+      :key="m.id"
+      class="bn-message"
+      :class="`bn-message--${m.type}`"
+    >
       {{m.message}}
     </div>
   </div>
@@ -24,7 +29,7 @@ export default {
       this.messages.push(layer);
       layer.timer = setTimeout(() => {
         this.remove(layer)
-      }, options.duration);
+      }, layer.duration);
     },
     remove (layer) {
       clearTimeout(layer.timer);

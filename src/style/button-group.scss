@@ -1,0 +1,8 @@
+.bn-button-group {
+  display: inline-flex;
+  vertical-align: middle;
+
+  &.is-vertical {
+    flex-direction: column;
+  }
+}

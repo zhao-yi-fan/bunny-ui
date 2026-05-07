@@ -1,0 +1,26 @@
+.bn-divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e5e7eb;
+  }
+
+  &.is-left::after,
+  &.is-right::before {
+    flex: 999;
+  }
+}
+
+.bn-divider__text {
+  padding: 0 12px;
+}

@@ -1,0 +1,55 @@
+.bn-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  font-weight: 500;
+  line-height: 1;
+
+  &--small {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  &--medium {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  &--large {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  &--default,
+  &--info {
+    background: #eef2ff;
+    color: #4338ca;
+  }
+
+  &--success {
+    background: #ecfdf5;
+    color: #047857;
+  }
+
+  &--warning {
+    background: #fffbeb;
+    color: #b45309;
+  }
+
+  &--danger {
+    background: #fef2f2;
+    color: #b91c1c;
+  }
+}
+
+.bn-tag__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: currentColor;
+  cursor: pointer;
+}
