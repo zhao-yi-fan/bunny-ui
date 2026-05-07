@@ -12,15 +12,15 @@
   </head>
   <body>
     <div id="app" class="demo">
-      <bn-button @click="$message.info('Info message')">Info</bn-button>
-      <bn-button type="success" @click="$message.success('Success message')">Success</bn-button>
-      <bn-button type="warning" @click="$message.warn('Warning message')">Warn</bn-button>
-      <bn-button type="danger" @click="$message.error('Error message')">Error</bn-button>
+      <bn-button @click="$message.info('普通提示')">信息</bn-button>
+      <bn-button type="success" @click="$message.success('操作成功')">成功</bn-button>
+      <bn-button type="warning" @click="$message.warn('请注意当前状态')">警告</bn-button>
+      <bn-button type="danger" @click="$message.error('发生错误')">错误</bn-button>
     </div>
     <script src="https://unpkg.com/vue@2.7.16/dist/vue.min.js"></script>
     <script src="../dist/bunnyUi.umd.js"></script>
     <script>
-      Vue.use(bunnyUi.default)
+      Vue.use(bunnyUi)
       new Vue({ el: '#app' })
     </script>
   </body>

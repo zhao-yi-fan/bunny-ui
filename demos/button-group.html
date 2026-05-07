@@ -15,23 +15,23 @@
     <div id="app" class="demo">
       <div class="row">
         <bn-button-group>
-          <bn-button type="primary">Prev</bn-button>
-          <bn-button type="primary">Current</bn-button>
-          <bn-button type="primary">Next</bn-button>
+          <bn-button type="primary">上一步</bn-button>
+          <bn-button type="primary">当前</bn-button>
+          <bn-button type="primary">下一步</bn-button>
         </bn-button-group>
       </div>
       <div class="row">
         <bn-button-group vertical size="small">
-          <bn-button>North</bn-button>
-          <bn-button>Center</bn-button>
-          <bn-button>South</bn-button>
+          <bn-button>顶部</bn-button>
+          <bn-button>中间</bn-button>
+          <bn-button>底部</bn-button>
         </bn-button-group>
       </div>
     </div>
     <script src="https://unpkg.com/vue@2.7.16/dist/vue.min.js"></script>
     <script src="../dist/bunnyUi.umd.js"></script>
     <script>
-      Vue.use(bunnyUi.default)
+      Vue.use(bunnyUi)
       new Vue({ el: '#app' })
     </script>
   </body>

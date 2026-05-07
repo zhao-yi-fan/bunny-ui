@@ -13,14 +13,14 @@
   </head>
   <body>
     <div id="app" class="demo">
-      <bn-input v-model="keyword" placeholder="Search components" prefix-icon="search" clearable></bn-input>
-      <bn-input v-model="email" placeholder="Email address" suffix-icon="check"></bn-input>
+      <bn-input v-model="keyword" placeholder="搜索组件" prefix-icon="search" clearable></bn-input>
+      <bn-input v-model="email" placeholder="邮箱地址" suffix-icon="check"></bn-input>
       <div class="caption">keyword: {{ keyword }} | email: {{ email }}</div>
     </div>
     <script src="https://unpkg.com/vue@2.7.16/dist/vue.min.js"></script>
     <script src="../dist/bunnyUi.umd.js"></script>
     <script>
-      Vue.use(bunnyUi.default)
+      Vue.use(bunnyUi)
       new Vue({
         el: '#app',
         data: { keyword: '', email: 'team@bunny-ui.dev' }

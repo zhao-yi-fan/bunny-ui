@@ -16,12 +16,12 @@
       <span class="chip" v-for="name in names" :key="name">
         <bn-icon :name="name"></bn-icon>{{ name }}
       </span>
-      <span class="chip"><bn-icon name="warning" color="#f59e0b" spin></bn-icon>spin</span>
+      <span class="chip"><bn-icon name="warning" color="#f59e0b" spin></bn-icon>旋转</span>
     </div>
     <script src="https://unpkg.com/vue@2.7.16/dist/vue.min.js"></script>
     <script src="../dist/bunnyUi.umd.js"></script>
     <script>
-      Vue.use(bunnyUi.default)
+      Vue.use(bunnyUi)
       new Vue({
         el: '#app',
         data: { names: ['search', 'check', 'info', 'warning', 'chevron-left', 'chevron-right'] }
