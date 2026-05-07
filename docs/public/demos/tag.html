@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Demo</title>
+    <link rel="stylesheet" href="../dist/bunnyUi.css" />
+    <style>
+      body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .demo { padding: 24px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="demo">
+      <bn-tag>Default</bn-tag>
+      <bn-tag type="success">Ready</bn-tag>
+      <bn-tag type="warning">Pending</bn-tag>
+      <bn-tag type="danger" closable @close="handleClose">Closable</bn-tag>
+    </div>
+    <script src="https://unpkg.com/vue@2.7.16/dist/vue.min.js"></script>
+    <script src="../dist/bunnyUi.umd.js"></script>
+    <script>
+      Vue.use(bunnyUi.default)
+      new Vue({
+        el: '#app',
+        methods: {
+          handleClose () {
+            this.$message.info('Tag closed')
+          }
+        }
+      })
+    </script>
+  </body>
+</html>

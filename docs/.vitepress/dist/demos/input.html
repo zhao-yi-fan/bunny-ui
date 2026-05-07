@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Demo</title>
+    <link rel="stylesheet" href="../dist/bunnyUi.css" />
+    <style>
+      body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .demo { padding: 24px; display: grid; gap: 16px; }
+      .caption { color: #475569; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="demo">
+      <bn-input v-model="keyword" placeholder="Search components" prefix-icon="search" clearable></bn-input>
+      <bn-input v-model="email" placeholder="Email address" suffix-icon="check"></bn-input>
+      <div class="caption">keyword: {{ keyword }} | email: {{ email }}</div>
+    </div>
+    <script src="https://unpkg.com/vue@2.7.16/dist/vue.min.js"></script>
+    <script src="../dist/bunnyUi.umd.js"></script>
+    <script>
+      Vue.use(bunnyUi.default)
+      new Vue({
+        el: '#app',
+        data: { keyword: '', email: 'team@bunny-ui.dev' }
+      })
+    </script>
+  </body>
+</html>

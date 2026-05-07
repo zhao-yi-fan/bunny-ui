@@ -25,6 +25,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install docs dependencies
+        run: npm run docs:install
+
       - name: Validate library
         run: |
           npm run test:unit
@@ -38,4 +41,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.6.8
         with:
           branch: gh-pages
-          folder: docs-dist
+          folder: docs/.vitepress/dist

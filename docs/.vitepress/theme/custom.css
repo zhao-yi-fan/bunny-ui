@@ -1,0 +1,51 @@
+:root {
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #1d4ed8;
+  --vp-c-brand-3: #1e40af;
+  --vp-home-hero-name-color: #0f172a;
+  --vp-home-hero-image-background-image:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.24), transparent 30%),
+    linear-gradient(135deg, rgba(37, 99, 235, 0.16), rgba(14, 165, 233, 0.18));
+  --vp-home-hero-image-filter: blur(54px);
+}
+
+.VPHomeHero .name,
+.VPDoc h1,
+.VPDoc h2 {
+  letter-spacing: 0;
+}
+
+.demo-frame {
+  margin: 16px 0 24px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+}
+
+.demo-frame__iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+}
+
+.component-api {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0 28px;
+  font-size: 14px;
+}
+
+.component-api th,
+.component-api td {
+  padding: 10px 12px;
+  border-top: 1px solid var(--vp-c-divider);
+  text-align: left;
+  vertical-align: top;
+}
+
+.vp-doc .lead {
+  font-size: 17px;
+  color: var(--vp-c-text-2);
+}

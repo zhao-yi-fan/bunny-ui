@@ -2,7 +2,6 @@ const args = process.argv.slice(2);
 const path = require('path');
 const fs = require('fs');
 const sass = require('sass');
-const isDocsMode = process.env.DOCS_MODE === '1'
 
 const getEntries = (dir) => {
   let absPath = path.resolve(dir); // 绝对路径
@@ -31,22 +30,7 @@ const baseConfig = {
   }
 }
 
-if (isDocsMode) {
-  module.exports = {
-    ...baseConfig,
-    publicPath: process.env.NODE_ENV === 'production'
-      ? '/bunny-ui/'
-      : '/',
-    outputDir: 'docs-dist',
-    pages: {
-      index: {
-        entry: 'docs/main.js',
-        template: 'public/index.html',
-        filename: 'index.html'
-      }
-    }
-  }
-} else if (process.env.NODE_ENV === 'production' && !args.includes('--all')) {
+if (process.env.NODE_ENV === 'production' && !args.includes('--all')) {
   module.exports = {
     ...baseConfig,
     publicPath: process.env.NODE_ENV === 'production'

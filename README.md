@@ -25,4 +25,10 @@ npm run docs:build
 
 ## Docs
 
-The component documentation app lives in `docs/` and is built with `npm run docs:build`.
+The component documentation now lives in `docs/` and is powered by VitePress.
+
+```bash
+npm run docs:install
+npm run docs:serve
+npm run docs:build
+```
