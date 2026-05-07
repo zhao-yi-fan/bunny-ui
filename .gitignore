@@ -2,6 +2,8 @@
 node_modules
 /dist
 /docs-dist
+docs/.vitepress/dist
+docs/node_modules
 
 
 # local env files
