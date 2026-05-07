@@ -20,7 +20,8 @@
     <script src="https://unpkg.com/vue@2.7.16/dist/vue.min.js"></script>
     <script src="../dist/bunnyUi.umd.js"></script>
     <script>
-      Vue.use(bunnyUi)
+      const BunnyUI = bunnyUi.default || bunnyUi
+      Vue.use(BunnyUI)
       new Vue({
         el: '#app',
         methods: {
